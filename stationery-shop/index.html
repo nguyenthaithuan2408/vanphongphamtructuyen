@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StatioMart - Cửa hàng văn phòng phẩm trực tuyến hàng đầu Việt Nam. Mua bút, sổ tay, dụng cụ học tập chính hãng với giá tốt nhất.">
+  <title>StatioMart - Văn Phòng Phẩm Chính Hãng</title>
+
+  <!-- Google Fonts: Be Vietnam Pro (tiếng Việt) + Nunito -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Promo Strip -->
+<div class="promo-strip">
+  <i class="fas fa-truck"></i> Miễn phí vận chuyển đơn hàng từ 500.000đ &nbsp;|&nbsp;
+  <i class="fas fa-tags"></i> Giảm 20% cho khách hàng mới &nbsp;|&nbsp;
+  <i class="fas fa-headset"></i> Hỗ trợ 24/7
+</div>
+
+<!-- Navbar -->
+<nav class="main-navbar navbar navbar-expand-lg" id="mainNavbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      Statio<span>Mart</span>
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navCollapse">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-home me-1"></i>Trang Chủ</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html?category=but"><i class="fas fa-pen me-1"></i>Bút Viết</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html?category=so-tay"><i class="fas fa-book me-1"></i>Sổ Tay</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html?category=dung-cu"><i class="fas fa-ruler me-1"></i>Dụng Cụ HT</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html"><i class="fas fa-store me-1"></i>Tất Cả</a></li>
+      </ul>
+
+      <div class="d-flex align-items-center gap-3">
+        <!-- Search -->
+        <form class="search-form-wrapper" id="search-form">
+          <input class="search-input form-control" type="text" id="search-input" placeholder="Tìm sản phẩm...">
+          <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+        </form>
+
+        <!-- Cart -->
+        <a href="cart.html" class="cart-icon-wrapper">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Carousel -->
+<div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel" data-bs-interval="4500">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/images/banners/banner1.png" alt="Bộ sưu tập văn phòng phẩm cao cấp">
+      <div class="carousel-caption">
+        <h2>Bộ Sưu Tập Văn Phòng Phẩm Cao Cấp ✨</h2>
+        <p>Khám phá hàng ngàn sản phẩm bút, sổ tay, công cụ học tập chất lượng cao với giá tốt nhất thị trường.</p>
+        <a href="products.html" class="btn btn-primary btn-sm mt-1">
+          <i class="fas fa-arrow-right me-1"></i>Khám Phá Ngay
+        </a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/banners/banner2.png" alt="Khuyến mãi giảm giá mùa hè">
+      <div class="carousel-caption">
+        <h2>🔥 Sale Lớn – Giảm Đến 30%</h2>
+        <p>Ưu đãi cực sốc dành cho học sinh, sinh viên và dân văn phòng. Số lượng có hạn!</p>
+        <a href="products.html" class="btn btn-warning btn-sm mt-1 text-dark fw-bold">
+          <i class="fas fa-tags me-1"></i>Mua Ngay
+        </a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/banners/banner3.png" alt="Mùa tựu trường">
+      <div class="carousel-caption">
+        <h2>🎒 Chuẩn Bị Tựu Trường</h2>
+        <p>Mọi thứ bạn cần cho năm học mới. Dụng cụ học tập đầy đủ, bền đẹp, tiết kiệm!</p>
+        <a href="products.html?category=dung-cu" class="btn btn-success btn-sm mt-1">
+          <i class="fas fa-graduation-cap me-1"></i>Mua Sắm Ngay
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Categories Section -->
+<section>
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">Danh Mục <span>Nổi Bật</span></h2>
+      <p class="section-subtitle">Tìm sản phẩm theo danh mục bạn yêu thích</p>
+      <span class="section-divider mx-auto d-block"></span>
+    </div>
+    <div class="row g-3" id="category-cards">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- Stats Banner -->
+<div class="container">
+  <div class="stats-banner">
+    <div class="row g-0">
+      <div class="col-6 col-md-3">
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label"><i class="fas fa-box text-primary me-1"></i>Sản Phẩm</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-item" style="border-left:1px solid var(--gray-100)">
+          <div class="stat-number">12K+</div>
+          <div class="stat-label"><i class="fas fa-users text-primary me-1"></i>Khách Hàng</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-item" style="border-left:1px solid var(--gray-100)">
+          <div class="stat-number">50+</div>
+          <div class="stat-label"><i class="fas fa-star text-primary me-1"></i>Thương Hiệu</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-item" style="border-left:1px solid var(--gray-100)">
+          <div class="stat-number">4.9★</div>
+          <div class="stat-label"><i class="fas fa-heart text-primary me-1"></i>Đánh Giá TB</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Featured Products -->
+<section>
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between mb-1">
+      <div>
+        <h2 class="section-title mb-0">Sản Phẩm <span>Nổi Bật</span></h2>
+        <p class="section-subtitle">Được yêu thích và đánh giá cao nhất</p>
+      </div>
+      <a href="products.html" class="btn btn-outline-primary btn-sm">
+        Xem Tất Cả <i class="fas fa-arrow-right ms-1"></i>
+      </a>
+    </div>
+    <span class="section-divider"></span>
+    <div class="row g-3" id="featured-products">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section style="background: linear-gradient(135deg, #EFF6FF 0%, #F5F3FF 100%);">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="section-title">Tại Sao Chọn <span>StatioMart?</span></h2>
+      <span class="section-divider mx-auto d-block"></span>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-3 col-6">
+        <div class="text-center p-3">
+          <div class="mb-3" style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#2563EB,#8B5CF6);display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:1.5rem;color:#fff;">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h5 class="fw-700" style="font-family:'Nunito',sans-serif;font-weight:700">Hàng Chính Hãng</h5>
+          <p class="text-muted" style="font-size:.875rem">100% sản phẩm nhập từ đại lý chính thức, có tem bảo hành.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="text-center p-3">
+          <div class="mb-3" style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#10B981,#059669);display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:1.5rem;color:#fff;">
+            <i class="fas fa-truck"></i>
+          </div>
+          <h5 style="font-family:'Nunito',sans-serif;font-weight:700">Giao Hàng Nhanh</h5>
+          <p class="text-muted" style="font-size:.875rem">Ship toàn quốc trong 2-5 ngày. Miễn phí từ 500k.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="text-center p-3">
+          <div class="mb-3" style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#F97316,#EF4444);display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:1.5rem;color:#fff;">
+            <i class="fas fa-undo"></i>
+          </div>
+          <h5 style="font-family:'Nunito',sans-serif;font-weight:700">Đổi Trả Dễ Dàng</h5>
+          <p class="text-muted" style="font-size:.875rem">Đổi trả trong 7 ngày nếu sản phẩm lỗi hoặc không vừa ý.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="text-center p-3">
+          <div class="mb-3" style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#8B5CF6,#EC4899);display:flex;align-items:center;justify-content:center;margin:0 auto;font-size:1.5rem;color:#fff;">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h5 style="font-family:'Nunito',sans-serif;font-weight:700">Hỗ Trợ 24/7</h5>
+          <p class="text-muted" style="font-size:.875rem">Đội ngũ CSKH luôn sẵn sàng giải đáp mọi thắc mắc.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section>
+  <div class="container">
+    <div style="background:linear-gradient(135deg,var(--primary),var(--accent));border-radius:20px;padding:3rem 2rem;text-align:center;color:#fff;">
+      <h2 style="font-family:'Nunito',sans-serif;font-weight:800;margin-bottom:.5rem">Đăng Ký Nhận Ưu Đãi</h2>
+      <p style="opacity:.85;margin-bottom:1.5rem">Nhận ngay voucher 15% cho đơn hàng đầu tiên khi đăng ký email!</p>
+      <form class="d-flex justify-content-center gap-2 flex-wrap" onsubmit="event.preventDefault();showToast('Đăng ký thành công! Kiểm tra email của bạn nhé.','success')">
+        <input type="email" class="form-control" placeholder="Nhập email của bạn..." required
+          style="max-width:360px;border-radius:999px;border:none;padding:.6rem 1.4rem;">
+        <button type="submit" class="btn" style="background:#fff;color:var(--primary);font-weight:700;border-radius:999px;padding:.6rem 1.6rem;">
+          Đăng Ký <i class="fas fa-paper-plane ms-1"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="main-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="footer-brand">StatioMart</div>
+        <p class="footer-desc">Cửa hàng văn phòng phẩm trực tuyến uy tín #1 Việt Nam. Cung cấp đa dạng sản phẩm bút, sổ tay, dụng cụ học tập chính hãng, giá tốt.</p>
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col-md-2 col-6">
+        <h6 class="footer-heading">Danh Mục</h6>
+        <ul class="footer-links">
+          <li><a href="products.html?category=but"><i class="fas fa-chevron-right"></i>Bút Viết</a></li>
+          <li><a href="products.html?category=so-tay"><i class="fas fa-chevron-right"></i>Sổ Tay</a></li>
+          <li><a href="products.html?category=dung-cu"><i class="fas fa-chevron-right"></i>Dụng Cụ HT</a></li>
+          <li><a href="products.html?category=van-phong"><i class="fas fa-chevron-right"></i>Văn Phòng</a></li>
+        </ul>
+      </div>
+      <div class="col-md-2 col-6">
+        <h6 class="footer-heading">Hỗ Trợ</h6>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-chevron-right"></i>Chính sách đổi trả</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i>Hướng dẫn mua hàng</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i>Theo dõi đơn hàng</a></li>
+          <li><a href="#"><i class="fas fa-chevron-right"></i>FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h6 class="footer-heading">Liên Hệ</h6>
+        <ul class="footer-links">
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i>123 Lê Lợi, Quận 1, TP. HCM</a></li>
+          <li><a href="tel:19001234"><i class="fas fa-phone"></i>1900 1234 (8:00 – 21:00)</a></li>
+          <li><a href="mailto:support@stationmart.vn"><i class="fas fa-envelope"></i>support@stationmart.vn</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-bottom">
+      <span>© 2024 StatioMart. Bảo lưu mọi quyền.</span>
+      <div class="payment-icons">
+        <span class="payment-icon">VISA</span>
+        <span class="payment-icon">MC</span>
+        <span class="payment-icon">MOMO</span>
+        <span class="payment-icon">ZPay</span>
+        <span class="payment-icon">COD</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Toast Container -->
+<div id="toast-container"></div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- App Scripts -->
+<script src="assets/js/data.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+  // Back to top scroll
+  window.addEventListener('scroll', () => {
+    const btn = document.getElementById('backToTop');
+    if (btn) btn.classList.toggle('visible', window.scrollY > 400);
+  });
+</script>
+</body>
+</html>
