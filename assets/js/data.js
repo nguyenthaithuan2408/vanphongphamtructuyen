@@ -1,6 +1,6 @@
-// ============================================================
+
 // data.js - Mock Data sản phẩm văn phòng phẩm
-// ============================================================
+
 
 const PRODUCTS = [
   {
@@ -209,7 +209,7 @@ const PRODUCTS = [
   }
 ];
 
-// Danh mục sản phẩm
+//Danh mục sản phẩm
 const CATEGORIES = [
   { id: "all", label: "Tất Cả", icon: "fa-th-large" },
   { id: "but", label: "Bút Viết", icon: "fa-pen" },
@@ -218,12 +218,12 @@ const CATEGORIES = [
   { id: "van-phong", label: "Văn Phòng", icon: "fa-briefcase" }
 ];
 
-// Helper: Định dạng giá tiền VNĐ
+//Helper: Định dạng giá tiền VNĐ
 function formatPrice(price) {
   return price.toLocaleString("vi-VN") + "đ";
 }
 
-// Helper: Render sao đánh giá
+//Helper: Render sao đánh giá
 function renderStars(rating) {
   const full = Math.floor(rating);
   const half = rating % 1 >= 0.5 ? 1 : 0;
@@ -235,7 +235,7 @@ function renderStars(rating) {
   );
 }
 
-// Helper: Tính phần trăm giảm giá
+//Helper: Tính phần trăm giảm giá
 function calcDiscount(price, originalPrice) {
   return Math.round((1 - price / originalPrice) * 100);
 }

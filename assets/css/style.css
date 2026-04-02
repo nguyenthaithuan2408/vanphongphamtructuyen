@@ -1,14 +1,11 @@
-/* ============================================================
-   style.css - Custom CSS ghi đè Bootstrap + Design System
+/* 
+   CSS
    StatioMart - Online Stationery Shop
-   ============================================================ */
+*/
 
-/* ---- Google Fonts Import ---- */
-/* Be Vietnam Pro: thiết kế riêng cho tiếng Việt, đầy đủ dấu và ký tự đặc biệt */
-/* Nunito: heading font thân thiện, bo tròn, dễ đọc */
+
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Nunito:wght@400;600;700;800;900&display=swap');
 
-/* ---- CSS Variables / Design Tokens ---- */
 :root {
   --primary: #2563EB;
   --primary-dark: #1D4ED8;
@@ -36,7 +33,7 @@
   --transition: all .25s cubic-bezier(.4,0,.2,1);
 }
 
-/* ---- Base ---- */
+
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
@@ -64,9 +61,7 @@ img { max-width: 100%; }
 ::-webkit-scrollbar-track { background: var(--gray-100); }
 ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: 99px; }
 
-/* ============================================================
-   NAVBAR
-   ============================================================ */
+/* NAVBAR */
 .main-navbar {
   background: rgba(255,255,255,.95);
   backdrop-filter: blur(12px);
@@ -184,9 +179,7 @@ img { max-width: 100%; }
   border: 2px solid var(--white);
 }
 
-/* ============================================================
-   HERO / CAROUSEL BANNER
-   ============================================================ */
+/*  BANNER */
 .hero-carousel { margin-top: 0; }
 
 .hero-carousel .carousel-item {
@@ -232,9 +225,7 @@ img { max-width: 100%; }
   backdrop-filter: blur(4px);
 }
 
-/* ============================================================
-   SECTION TITLES
-   ============================================================ */
+/* SECTION TITLES */
 .section-title {
   font-size: clamp(1.4rem, 3vw, 2rem);
   font-weight: 800;
@@ -258,9 +249,7 @@ img { max-width: 100%; }
   margin: 0.5rem 0 2rem;
 }
 
-/* ============================================================
-   CATEGORY CARDS
-   ============================================================ */
+/* CATEGORY CARDS */
 .category-card {
   display: flex;
   flex-direction: column;
@@ -305,9 +294,7 @@ img { max-width: 100%; }
   transform: scale(1.1);
 }
 
-/* ============================================================
-   PRODUCT CARDS
-   ============================================================ */
+/*  PRODUCT CARDS */
 .product-card {
   background: var(--white);
   border-radius: var(--radius-md);
@@ -455,9 +442,7 @@ img { max-width: 100%; }
 .badge-economy { background: var(--warning); color: #fff; }
 .badge-hot { background: #EC4899; color: #fff; }
 
-/* ============================================================
-   PRODUCT DETAIL PAGE
-   ============================================================ */
+
 .product-detail-img-wrap {
   position: relative;
   border-radius: var(--radius-lg);
@@ -547,7 +532,7 @@ img { max-width: 100%; }
   border-radius: 999px;
 }
 
-/* Add to cart section */
+
 .add-to-cart-section {
   display: flex;
   align-items: center;
@@ -588,7 +573,7 @@ img { max-width: 100%; }
   transform: translateY(-2px);
 }
 
-/* Policy badges */
+
 .policy-badges {
   display: flex;
   gap: 1rem;
@@ -609,9 +594,7 @@ img { max-width: 100%; }
 
 .policy-item i { color: var(--success); }
 
-/* ============================================================
-   PRODUCTS PAGE - Sidebar Filters
-   ============================================================ */
+
 .filter-sidebar {
   background: var(--white);
   border-radius: var(--radius-md);
@@ -695,9 +678,7 @@ img { max-width: 100%; }
 
 .sort-select:focus { outline: none; border-color: var(--primary); }
 
-/* ============================================================
-   QUANTITY CONTROL
-   ============================================================ */
+
 .quantity-control {
   display: flex;
   align-items: center;
@@ -740,9 +721,7 @@ img { max-width: 100%; }
 
 .qty-input:focus { outline: none; }
 
-/* ============================================================
-   CART PAGE
-   ============================================================ */
+
 .cart-product-info {
   display: flex;
   align-items: center;
@@ -828,7 +807,7 @@ img { max-width: 100%; }
   margin-top: 0.5rem;
 }
 
-/* Checkout form */
+
 .checkout-form-card {
   background: var(--white);
   border-radius: var(--radius-md);
@@ -873,7 +852,7 @@ img { max-width: 100%; }
   color: #fff;
 }
 
-/* Cart empty */
+
 .cart-empty-state {
   text-align: center;
   padding: 4rem 2rem;
@@ -883,9 +862,7 @@ img { max-width: 100%; }
 .cart-empty-state i { font-size: 4rem; margin-bottom: 1rem; color: var(--gray-300); }
 .cart-empty-state h4 { font-weight: 700; color: var(--gray-700); margin-bottom: 0.5rem; }
 
-/* ============================================================
-   TOAST NOTIFICATIONS
-   ============================================================ */
+
 #toast-container {
   position: fixed;
   bottom: 1.5rem;
@@ -944,9 +921,7 @@ img { max-width: 100%; }
 
 .toast-close:hover { background: var(--gray-100); color: var(--gray-700); }
 
-/* ============================================================
-   PROMO BANNER STRIP
-   ============================================================ */
+
 .promo-strip {
   background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 50%, var(--secondary) 100%);
   color: #fff;
@@ -959,9 +934,7 @@ img { max-width: 100%; }
 
 .promo-strip i { margin: 0 0.3rem; }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
+/* FOOTER */
 .main-footer {
   background: var(--dark);
   color: rgba(255,255,255,.75);
@@ -1051,9 +1024,7 @@ img { max-width: 100%; }
   font-weight: 700;
 }
 
-/* ============================================================
-   BACK TO TOP
-   ============================================================ */
+
 .back-to-top {
   position: fixed;
   bottom: 5rem;
@@ -1079,16 +1050,12 @@ img { max-width: 100%; }
 .back-to-top.visible { opacity: 1; transform: translateY(0); }
 .back-to-top:hover { background: var(--primary-dark); transform: translateY(-4px); }
 
-/* ============================================================
-   BREADCRUMB
-   ============================================================ */
+
 .breadcrumb-item a { color: var(--primary); }
 .breadcrumb-item.active { color: var(--gray-500); }
 .breadcrumb-item + .breadcrumb-item::before { color: var(--gray-400); }
 
-/* ============================================================
-   PAGE HERO (products, cart pages)
-   ============================================================ */
+
 .page-hero {
   background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
   color: #fff;
@@ -1099,9 +1066,7 @@ img { max-width: 100%; }
 .page-hero h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 800; margin-bottom: 0.25rem; }
 .page-hero p { opacity: 0.85; font-size: 1rem; }
 
-/* ============================================================
-   STATS BANNER (homepage)
-   ============================================================ */
+
 .stats-banner {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -1119,9 +1084,7 @@ img { max-width: 100%; }
 }
 .stat-label { font-size: 0.875rem; color: var(--gray-500); font-weight: 500; }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
+
 @media (max-width: 768px) {
   .hero-carousel .carousel-item { height: 300px; }
   .hero-carousel .carousel-caption {
@@ -1147,9 +1110,7 @@ img { max-width: 100%; }
   .cart-product-img { width: 48px; height: 48px; }
 }
 
-/* ============================================================
-   ORDER SUCCESS MODAL
-   ============================================================ */
+
 .success-modal-body { text-align: center; padding: 2.5rem; }
 .success-icon { font-size: 4rem; color: var(--success); margin-bottom: 1rem; animation: bounceIn .5s ease; }
 
@@ -1159,9 +1120,7 @@ img { max-width: 100%; }
   100% { transform: scale(1); opacity: 1; }
 }
 
-/* ============================================================
-   UTILITY / HELPERS
-   ============================================================ */
+
 .text-primary { color: var(--primary) !important; }
 .text-secondary-custom { color: var(--secondary) !important; }
 .bg-primary-light { background: var(--primary-light) !important; }
